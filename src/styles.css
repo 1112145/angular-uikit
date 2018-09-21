@@ -1,1 +1,14 @@
 /* You can add global styles to this file, and also import other style files */
+@font-face {
+    font-family: proximaNovaLight;
+    src: url(assets/fonts/ProximaNova-Light-webfont.woff2) format("opentype");
+}
+
+@font-face {
+    font-family: proximaNovaReg;
+    src: url(assets/fonts/ProximaNova-Reg-webfont.woff2) format("opentype");
+}
+
+html, h1 {
+    font-family: 'proximaNovaLight', 'proximaNovaReg', sans-serif;
+}
