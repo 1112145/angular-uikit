@@ -1,5 +1,5 @@
-<div class="uk-container" style="height: 100vh">
-  <form class="uk-width-large@l uk-position-center">
+<div id="login-page" class="uk-container" style="height: 100vh">
+  <form [formGroup]="loginForm" (ngSubmit)="doLogin()" class="uk-width-large@l uk-position-center">
     <div class="uk-margin-large-bottom">
       <h1 class="uk-text-center">Medicine <b>Online</b></h1>
     </div>
@@ -12,7 +12,7 @@
       <input id="password" class="uk-input" type="password" placeholder="Password">
     </div>
     <div class="uk-margin">
-      <button class="uk-button uk-button-secondary uk-align-right">Login</button>
+      <button class="uk-button uk-button-secondary uk-align-right" type="submit">Login</button>
     </div>
   </form>
 </div>
