@@ -1,0 +1,10 @@
+{
+  "hosting": {
+    "public": "dist/my-angular-uikit",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}
