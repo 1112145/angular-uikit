@@ -8,6 +8,9 @@ image: node:10.10.0
 pipelines:
   default:
     - step:
+        script:
+          -mvn sonar:sonar -Dsonar.host.url=https://sonarcloud.io -Dsonar.organization=my-team-org -Dsonar.login=$SONAR_TOKEN
+    - step:
         caches:
           - node
         name: Deployment
